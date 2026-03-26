@@ -1,7 +1,7 @@
 import sys
 from PyQt5.QtWidgets import (QApplication, QWidget, QPushButton, QVBoxLayout,
                              QMessageBox, QPlainTextEdit, QHBoxLayout,
-                             QLineEdit, QComboBox)
+                             QLineEdit, QComboBox, QLabel)
 
 from PyQt5.QtGui import QIcon
 
@@ -43,11 +43,16 @@ class View(QWidget):
 
         #############################################
 
+        self.lbl1 = QLabel('v.2.3.0', self)
+
         self.btn1 = QPushButton('Calc', self)
         self.btn2 = QPushButton('Clear', self)
 
         hbox = QHBoxLayout()
         hbox.addStretch(1)
+
+        hbox.addWidget(self.lbl1)
+
         hbox.addWidget(self.btn1)
         hbox.addWidget(self.btn2)
 
