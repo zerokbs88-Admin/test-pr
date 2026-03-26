@@ -44,6 +44,7 @@ class View(QWidget):
         #############################################
 
         self.lbl1 = QLabel('v.2.3.0', self)
+        self.lbl1.setFont(QFont('Consolas', 10))
 
         self.btn1 = QPushButton('Calc', self)
         self.btn2 = QPushButton('Clear', self)
